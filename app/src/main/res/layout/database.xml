@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/e_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="number"
+        android:textColorHint="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/e_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/E_name"
+        android:textColorHint="@color/white"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/E_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="categories"
+        android:textColorHint="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/E_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="level"
+        android:textColorHint="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/E_origin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="origin"
+        android:textColorHint="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/E_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="description"
+        android:textColorHint="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/list_data"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="#651FFF" />
+
+</LinearLayout>

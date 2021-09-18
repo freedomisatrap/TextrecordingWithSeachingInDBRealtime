@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ccc_background"
+    android:hapticFeedbackEnabled="false"
+    tools:context="com.scanne.ReadActivity">
+
+    <EditText
+        android:id="@+id/textId1"
+        android:layout_width="401dp"
+        android:layout_height="71dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#41929D"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--
+    <Button
+        android:id="@+id/buttonAuto2"
+        android:layout_width="85dp"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/admin_pn_foreground"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="goLogin"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="534dp" />
+-->
+
+    <ListView
+        android:id="@+id/listE"
+        android:layout_width="377dp"
+        android:layout_height="253dp"
+        android:layout_marginTop="88dp"
+        android:background="#B3D3D8"
+        android:textFilterEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textId1">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/buGallery"
+        android:layout_width="114dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="16dp"
+        android:background="#8DBEC4"
+        android:onClick="doGallery"
+        android:text="@string/gallery"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buCamera"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageId2"
+        android:layout_width="10dp"
+        android:layout_height="7dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="404dp"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/buCamera"
+        app:layout_constraintTop_toTopOf="@+id/listE"
+        app:srcCompat="@drawable/common_full_open_on_phone" />
+
+    <!--  <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:background="@drawable/ic_baseline_search_24"
+        android:backgroundTint="#2B2B2B"
+        android:onClick="goSearch"
+        android:textColor="#040303"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="454dp" />
+-->
+
+    <Button
+        android:id="@+id/buCamera"
+        android:layout_width="114dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="16dp"
+        android:background="#8DBEC4"
+        android:onClick="doScann"
+        android:text="@string/camera"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listE"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="316dp"
+        android:layout_height="57dp"
+        android:shadowColor="#FFFFFF"
+        android:text="Список "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textId1"
+        app:layout_constraintVertical_bias="0.04" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

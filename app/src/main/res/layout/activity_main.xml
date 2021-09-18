@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEA00"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="379dp"
+        android:layout_above="@+id/bGallery"
+        android:layout_below="@+id/textId"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="44dp" />
+
+    <ImageView
+        android:id="@+id/imageId"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="295dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="561dp"
+        android:background="#651FFF"
+        app:srcCompat="@drawable/common_full_open_on_phone" />
+
+    <Button
+        android:id="@+id/bGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="53dp"
+        android:background="#F50057"
+        android:onClick="doGallery"
+        android:text="@string/gallery" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="#F50057"
+        android:onClick="doScann"
+        android:text="@string/camera" />
+
+    <EditText
+        android:id="@+id/textId"
+        android:layout_width="277dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="6dp"
+        android:background="#651FFF"
+        android:inputType="textPersonName"
+        android:text="@string/name"
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonAuto"
+        android:layout_width="82dp"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="346dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/admin_pn_foreground"
+        android:backgroundTint="#000000"
+        android:onClick="goLogin" />
+
+    <!-- android:text="@string/camera"
+
+
+     <ScrollView
+           android:layout_width="350dp"
+         android:layout_height="626dp"
+
+         android:layout_alignParentTop="true"
+
+         android:layout_alignParentBottom="true"
+
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="177dp"
+         android:layout_marginBottom="10dp">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+
+     android:background="#040202"
+     android:orientation="vertical">
+
+         <ListView
+             android:id="@+id/listE"
+             android:background="#651FFF"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+ </LinearLayout>
+     </ScrollView>
+     -->
+
+</RelativeLayout>
